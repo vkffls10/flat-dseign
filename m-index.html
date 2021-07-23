@@ -4,47 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모바일용 플랫 디자인</title>
+    <title>모바일 플랫디자인</title>
     <style>
         *{
             margin:0;
         }
-        #wrap{
+        .wrap{
             width: 360px;
             margin-left: auto;
             margin-right: auto;
         }
-        header{
+        .header{
             background-color: #2ecc71;
         }
-        #contents{
-            background-color: #ff0000;
+        .header-icons{
+            border-bottom: 1px solid #ffffff;
+            padding-top: 19px;
+            padding-bottom: 19px;
         }
-        footer{
-            background-color: #2c3e50;
+        .ing-box{
+            display: inline-block;
+            width: 30px;
+            margin-left: 27px;
+            margin-right: 27px;
+        }
+        .header-bottom{
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
+        .CI{
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
-    <div id="wrap">
-    <header>
-    <div id="header-icons">header-icons</div>
-    <div id="header-bottom">header-bottom</div>
-    </header>
-    <div id="contents">
-        
-    <div id="slider">SLIDER</div>
-    <div id="new-doc">new doc</div>
-    <div id="best-doc">best doc</div>
-    <div id="point-flat">point flat</div>
-    <div id="best-key">best key</div>
-    <div id="w3c">w3c</div>
-    <div id="web-std">web std</div>
-    <div id="sns">sns</div>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-icons">
+                <div class="ing-box box01"><img src="./images/icon-home.svg" alt="홈으로 이동"></img></div>
+                <div class="ing-box box02"><img src="./images/icon-secret.svg" alt="보안 설정"></img></div>
+                <div class="ing-box box03"><img src="./images/icon-login.svg" alt="사용자 로그인"></img></div>
+                <div class="ing-box box04"><img src="./images/icon-search.svg" alt="검색"></img></div>
+            </div> 
+            <div class="header-bottom">
+                <div class="CI">
+                    <h1>
+                        FLAT<br>
+                        DESGIN
+                    </h1>
+                </div>
+                <nav class="nav">
+                    <div class="line line01">라인</div>
+                    <div class="line line02">라인</div>
+                    <div class="line line03">라인</div>
+                </nav>
+            </div>
+        </header>
     </div>
-    <footer>
-    <address>address</address>
-    </footer>
+    <div class="contents">
+        컨텐츠
+    </div>
+    <div class="contents">
+        푸터
     </div>
 </body>
 </html>
